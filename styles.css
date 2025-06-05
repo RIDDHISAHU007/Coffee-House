@@ -64,6 +64,15 @@ image {
     width:auto;          /* Keeps aspect ratio */
     object-fit: contain;  /* Ensures the image scales properly */
   }
+  .nav-center-text {
+  font-size: var(--font-size-xxl);
+  font-weight: 600;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Miniver", sans-serif;
+  color: var(--secondary-color);
+}
   
 
 .section-content {
@@ -610,10 +619,15 @@ justify-content: space-between;
 } 
 
 @media screen and (max-width: 640px) {
+  
     .menu-section .menu-list .menu-item,
     .gallery-section .gallery-list .gallery-item {
         width: 100%;
     }
+    .logo-image {
+height: 60px;
+}
+    
     .menu-section .menu-list {
         gap: 60px;
     }
@@ -659,5 +673,9 @@ justify-content: space-between;
       .footer-section .policy-text {
         font-size: var(--font-size-s);
       }
+      .gallery-section {
+    padding-left: 16px; /* Reduce as needed */
+    padding-right: 16px; /* Optional: add some right padding for balance */
+  }
    
 }
