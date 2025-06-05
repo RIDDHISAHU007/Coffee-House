@@ -64,16 +64,10 @@ image {
     width:auto;          /* Keeps aspect ratio */
     object-fit: contain;  /* Ensures the image scales properly */
   }
-  .nav-center-text {
-  font-size: var(--font-size-xxl);
-  font-weight: 600;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: "Miniver", sans-serif;
-  color: var(--secondary-color);
+ .nav-center-text {
+  display: none; /* hidden by default */
 }
-  
+
 
 .section-content {
     max-width: var(--site-max-width);
@@ -677,5 +671,16 @@ height: 60px;
     padding-left: 16px; /* Reduce as needed */
     padding-right: 16px; /* Optional: add some right padding for balance */
   }
+  .nav-center-text {
+    font-size: var(--font-size-xxl);
+    font-weight: 600;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Miniver", sans-serif;
+    color: var(--secondary-color);
+    display: block; /* Make sure it's visible */
+  }
+
    
 }
